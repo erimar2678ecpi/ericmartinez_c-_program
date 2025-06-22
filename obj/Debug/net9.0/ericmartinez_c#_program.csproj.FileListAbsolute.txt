@@ -1,0 +1,14 @@
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\bin\Debug\net9.0\ericmartinez_c#_program.exe
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\bin\Debug\net9.0\ericmartinez_c#_program.deps.json
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\bin\Debug\net9.0\ericmartinez_c#_program.runtimeconfig.json
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\bin\Debug\net9.0\ericmartinez_c#_program.dll
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\bin\Debug\net9.0\ericmartinez_c#_program.pdb
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.AssemblyInfoInputs.cache
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.AssemblyInfo.cs
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.csproj.CoreCompileInputs.cache
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.dll
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\refint\ericmartinez_c#_program.dll
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.pdb
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.genruntimeconfig.cache
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ref\ericmartinez_c#_program.dll
