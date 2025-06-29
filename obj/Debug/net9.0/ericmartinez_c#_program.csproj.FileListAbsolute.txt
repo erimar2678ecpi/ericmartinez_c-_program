@@ -12,3 +12,4 @@ C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Deb
 C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.pdb
 C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.genruntimeconfig.cache
 C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ref\ericmartinez_c#_program.dll
+C:\Users\eric_\OneDrive - ECPI University\C# OOP\ericmartinez_c#_program\obj\Debug\net9.0\ericmartinez_c#_program.sourcelink.json
