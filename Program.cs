@@ -1,8 +1,9 @@
 ﻿﻿/*
  * Eric Martinez
- * June 21, 2025
- * Week 1 Project - IO & Operators
- * Description: Console app that performs basic integer addition and floating-point subtraction with formatted output and input validation.
+ * June 28, 2025
+ * Week 2 Project - Simple Calculator
+ * This program implements a simple calculator that performs basic arithmetic operations
+ * such as addition, subtraction, multiplication, division, and modulus.
  */
 
 using System;
