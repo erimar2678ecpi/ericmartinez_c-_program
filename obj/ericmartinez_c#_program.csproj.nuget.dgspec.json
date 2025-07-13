@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eric_\\OneDrive - ECPI University\\C# OOP\\ericmartinez_c#_program\\ericmartinez_c#_program.csproj": {}
+    "/Users/ericmartinez/Library/CloudStorage/OneDrive-ECPIUniversity/C# OOP/ericmartinez_c#_program/ericmartinez_c#_program.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eric_\\OneDrive - ECPI University\\C# OOP\\ericmartinez_c#_program\\ericmartinez_c#_program.csproj": {
+    "/Users/ericmartinez/Library/CloudStorage/OneDrive-ECPIUniversity/C# OOP/ericmartinez_c#_program/ericmartinez_c#_program.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eric_\\OneDrive - ECPI University\\C# OOP\\ericmartinez_c#_program\\ericmartinez_c#_program.csproj",
+        "projectUniqueName": "/Users/ericmartinez/Library/CloudStorage/OneDrive-ECPIUniversity/C# OOP/ericmartinez_c#_program/ericmartinez_c#_program.csproj",
         "projectName": "ericmartinez_c#_program",
-        "projectPath": "C:\\Users\\eric_\\OneDrive - ECPI University\\C# OOP\\ericmartinez_c#_program\\ericmartinez_c#_program.csproj",
-        "packagesPath": "C:\\Users\\eric_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eric_\\OneDrive - ECPI University\\C# OOP\\ericmartinez_c#_program\\obj\\",
+        "projectPath": "/Users/ericmartinez/Library/CloudStorage/OneDrive-ECPIUniversity/C# OOP/ericmartinez_c#_program/ericmartinez_c#_program.csproj",
+        "packagesPath": "/Users/ericmartinez/.nuget/packages/",
+        "outputPath": "/Users/ericmartinez/Library/CloudStorage/OneDrive-ECPIUniversity/C# OOP/ericmartinez_c#_program/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eric_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/ericmartinez/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "/opt/homebrew/Cellar/dotnet/9.0.7/libexec/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -59,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet/9.0.7/libexec/sdk/9.0.108/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

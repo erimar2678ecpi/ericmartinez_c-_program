@@ -1,7 +1,8 @@
 ﻿﻿/*
  * Eric Martinez
- * June 28, 2025
- * Week 2 Project - Simple Calculator
+ * July 13, 2025
+ * Week 3 Project - Simple Calculator App
+ * C#
  * This program implements a simple calculator that performs basic arithmetic operations
  * such as addition, subtraction, multiplication, division, and modulus.
  */
@@ -18,11 +19,12 @@ class CalculatorApp
         Console.WriteLine("3. Multiplication");
         Console.WriteLine("4. Division");
         Console.WriteLine("5. Modulus");
-        Console.WriteLine("6. Exit");
+        Console.WriteLine("6. Memory");
+        Console.WriteLine("7. Exit");
     }
     static void HandleChoice()
     {
-        int choice = InputValidator.ReadMenuChoice("Enter your choice (1-6): ");
+        int choice = InputValidator.ReadMenuChoice("Enter your choice (1-7): ");
         switch (choice)
         {
             case 1:
@@ -61,6 +63,11 @@ class CalculatorApp
                 Console.WriteLine($"{modNum1} % {modNum2} = {modulus}\n");
                 break;
             case 6:
+                Console.WriteLine("You selected Memory.");
+                Memory memory = new Memory();
+                memory.ShowMemoryMenu();
+                break;
+              case 7:
                 Console.WriteLine("Exiting...");
                 Environment.Exit(0);
                 break;
@@ -72,7 +79,7 @@ class CalculatorApp
     }
     static void Main()
     {
-        Console.WriteLine("Week 2 Project - Simple Calculator by Eric Martinez");
+        Console.WriteLine("Week 3 Project - Simple Calculator by Eric Martinez");
         Console.WriteLine("Welcome to the Simple Calculator!");
         while (true)
         {
