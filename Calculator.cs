@@ -18,16 +18,14 @@ class Calculator
   public static double Divide(double a, double b)
   {
     if (b == 0)
-    {
-      throw new DivideByZeroException("Cannot divide by zero.");
-    }
+      throw new Exception("Division by zero is not allowed.");
     return a / b;
   }
     public static int Modulus(int a, int b)
     {
         if (b == 0)
         {
-            throw new DivideByZeroException("Cannot divide by zero.");
+            throw new Exception("ivision by zero is not allowed.");
         }
         return a % b;
     }
