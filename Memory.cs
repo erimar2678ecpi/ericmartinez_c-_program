@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
 public class Memory
 {
     private double? memoryValue = null;
-    private List<int> memoryList = new List<int>();
-
-    // Use InputValidator for input validation
+    private List<double> memoryList = new List<double>();
 
     public void ShowMemoryMenu()
     {
@@ -17,7 +16,7 @@ public class Memory
             Console.WriteLine("2. Retrieve single value");
             Console.WriteLine("3. Clear single value");
             Console.WriteLine("4. Replace single value");
-            Console.WriteLine("5. Add value to memory list");
+            Console.WriteLine("5. Add one or more values to memory list");
             Console.WriteLine("6. Display memory list");
             Console.WriteLine("7. Count values in memory list");
             Console.WriteLine("8. Remove value from memory list");
@@ -36,7 +35,9 @@ public class Memory
                     break;
 
                 case "2":
-                    Console.WriteLine(memoryValue.HasValue ? $"Stored value: {memoryValue}" : "No value in memory.");
+                    Console.WriteLine(memoryValue.HasValue
+                        ? $"Stored value: {memoryValue:F2}"
+                        : "No value in memory.");
                     break;
 
                 case "3":
@@ -53,20 +54,22 @@ public class Memory
                     if (memoryList.Count >= 10)
                     {
                         Console.WriteLine("Memory list is full (max 10).");
+                        break;
                     }
-                    else
-                    {
-                        int val = InputValidator.ReadInt("Enter integer to add: ");
-                        memoryList.Add(val);
-                        Console.WriteLine("Value added.");
-                    }
+
+                    double[] newValues = InputValidator.ReadDoubleList("Enter up to 10 numbers separated by spaces: ");
+                    int availableSpace = 10 - memoryList.Count;
+                    double[] toAdd = newValues.Take(availableSpace).ToArray();
+
+                    memoryList.AddRange(toAdd);
+                    Console.WriteLine($"{toAdd.Length} value(s) added to memory.");
                     break;
 
                 case "6":
                     if (memoryList.Count == 0)
                         Console.WriteLine("Memory list is empty.");
                     else
-                        Console.WriteLine("Values: " + string.Join(", ", memoryList));
+                        Console.WriteLine("Values: " + string.Join(", ", memoryList.Select(v => v.ToString("F2"))));
                     break;
 
                 case "7":
@@ -74,7 +77,7 @@ public class Memory
                     break;
 
                 case "8":
-                    int removeVal = InputValidator.ReadInt("Enter value to remove: ");
+                    double removeVal = InputValidator.ReadDouble("Enter value to remove: ");
                     if (memoryList.Remove(removeVal))
                         Console.WriteLine("Value removed.");
                     else
@@ -82,31 +85,29 @@ public class Memory
                     break;
 
                 case "9":
-                    int sum = 0;
-                    foreach (var num in memoryList) sum += num;
-                    Console.WriteLine($"Sum: {sum}");
+                    Console.WriteLine($"Sum = {memoryList.Sum():F2}");
                     break;
 
                 case "10":
-                    if (memoryList.Count == 0)
-                        Console.WriteLine("No values to average.");
+                    if (memoryList.Count > 0)
+                        Console.WriteLine($"Average = {memoryList.Average():F2}");
                     else
-                        Console.WriteLine($"Average: {(double)memoryList.Sum() / memoryList.Count}");
+                        Console.WriteLine("Memory list is empty.");
                     break;
 
                 case "11":
-                    if (memoryList.Count < 2)
-                        Console.WriteLine("Need at least two values.");
+                    if (memoryList.Count >= 2)
+                        Console.WriteLine($"Difference = {(memoryList.First() - memoryList.Last()):F2}");
                     else
-                        Console.WriteLine($"Difference: {memoryList[0] - memoryList[^1]}");
+                        Console.WriteLine("Need at least 2 values to calculate difference.");
                     break;
 
                 case "12":
-                    Console.WriteLine("Exiting Memory Menu...");
+                    Console.WriteLine("Returning to main menu...\n");
                     return;
 
                 default:
-                    Console.WriteLine("Invalid option.");
+                    Console.WriteLine("Invalid option.\n");
                     break;
             }
         }
